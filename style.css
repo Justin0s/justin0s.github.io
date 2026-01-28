@@ -25,5 +25,26 @@ h4{
     justify-content: center; /* horizontal */
 
     margin: 0 auto;
+}
 
+.contmid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.butin {
+    font-size: 45px;
+    background-color: Firebrick;
+    color: white;
+    border-radius: 10px;
+    border-color: OrangeRed;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }
