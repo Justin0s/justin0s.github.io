@@ -13,3 +13,12 @@ h3{
 h4{
     color: Aquamarine;
 }
+
+.asset1 {
+    padding: 10px;
+    border: 2px solid #ccc;
+    align-items: center; //vertical
+    justify-items: center; //horizontal
+    flex-direction: row;
+
+}
