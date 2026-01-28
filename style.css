@@ -16,9 +16,14 @@ h4{
 
 .asset1 {
     padding: 10px;
-    border: 2px solid #ccc;
-    align-items: center; //vertical
-    justify-items: center; //horizontal
+    /*border: 2px solid #ccc;*/
+
+    display: flex;
     flex-direction: row;
+
+    align-items: center; /* vertical */
+    justify-content: center; /* horizontal */
+
+    margin: 0 auto;
 
 }
