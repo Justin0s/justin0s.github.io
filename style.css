@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(12, 12, 12);
+    background-color: DarkSlateGray;
 }
 
 h2{
@@ -12,6 +12,10 @@ h3{
 
 h4{
     color: Aquamarine;
+}
+
+h2 {
+    color: Aquamarine
 }
 
 .asset1 {
@@ -47,4 +51,25 @@ h4{
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+}
+
+.copyright {
+    color: LightSlateGray;
+}
+
+.title {
+    font-size: 45px;
+    color: Aquamarine;
+}
+
+.subtitle {
+    font-size: 40px;
+    color: Turquoise;
+}
+
+.hline {
+    border-color: Aquamarine;
+    height: 0px;
+    border-top: 20px solid Aquamarine;
+    border-bottom: 20px solid Turquoise;
 }
