@@ -76,14 +76,16 @@ h2 {
 .title {
     font-size: 1.5rem;
     font-weight: 600;
-    margin: 0 auto;
+    margin: 0;
     color: Aquamarine;
+    text-align: center;
 }
 
 .subtitle {
-    font-size: 1.25rem;
-    font-weight: 500;
+    font-size: 1.1rem;
     color: Turquoise;
+    margin: 0;
+    text-align: center;
 }
 
 .hline {
@@ -114,8 +116,11 @@ h2 {
 
 .card-header {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 0.9375rem;
+    justify-content: center;
+    gap: 0.3125rem;
     margin-bottom: 0.9375rem;
+    text-align: center;
 }
 
