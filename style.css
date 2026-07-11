@@ -1,7 +1,7 @@
 body{
     margin: 0;
     height: 100vh;
-    background: linear-gradient(-45deg, #0a0a0a, #4b0082, #0077ff, #00d4ff);
+    background: linear-gradient(0deg, #7802c2, #4b0082, #4400ff, #997cf5);
     background-size: 400% 400%;
     animation: gradientMove 12s ease infinite;
 }
@@ -90,13 +90,12 @@ h2 {
     border-bottom: 20px solid Turquoise;
 }
 
-.imgswap {
-    width: 200px;
-    height: 200px;
-    background-image: url("pink square.jpg");
-    transition: background-image 0.3 ease;
+.bottom-line {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    z-index: 10;
 }
 
-.imgswap-hover {
-    background-image: url("aqua square.png")
-}
