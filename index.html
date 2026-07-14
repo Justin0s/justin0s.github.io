@@ -2,12 +2,12 @@
 <html>
     <head>
         <link rel = "icon" type = "image/png" href = "peek.PNG">
-        <title>
-            the fish who could
-        </title>
+            <title>
+                the fish who could
+            </title>
         <link rel="stylesheet" href="style.css">
-
     </head>
+    
     <body>
     <hr class="hline">
 
@@ -21,105 +21,41 @@
             </p>
         </div>
     </div>
-        
-        
-        
 
-
-        <a href = "https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fi-ordered-a-niko-the-seal-plush-to-celebrate-his-5th-v0-e7wsfdmyocje1.jpeg%3Fauto%3Dwebp%26s%3D440c9cd30e072ec8c54d2cedab5fd483a4032dd4"
-        target = "_blank">
-        <img class="center"
-        src = "caption4.png"
-        height = "200"
-        alt = "hey shrub image">
-        </a>
-
-        <div class = "asset1">
-            <img src = "twitter_1968857582044410211.gif">
+        <div class="tweet-card">
+            <h2 class="tweet-title">Tweet of the day</h2>
+            <div id="tweet-container"></div>
         </div>
 
-        <img class="center"
-        src = "twitter_1968857582044410211.gif"
-        alt = "im waiting...">
+        <script>
+            const tweetLinks = [
+                "https://x.com/SplatoonJP/status/2076955865027051741",
+                "https://x.com/SplatoonJP/status/2076955611796009129",
+                "https://x.com/SplatoonJP/status/2075143924440793397"
+            ];
 
-        <br>
+            const randomTweet = tweetLinks[Math.floor(Math.random() * tweetLinks.length)];
+            const tweetContainer = document.getElementById("tweet-container");
 
-        <a href="https://hardcore.miraheze.org/wiki/Stuff"
-        target="_blank">
-        <button style="font-size: 25px; background-color: Crimson; color:white; border-radius: 10px; border-color:DarkRed">
-            ⚠️click here⚠️
-        </button>
-        </a>
+            tweetContainer.innerHTML = `
+                <blockquote class="twitter-tweet" data-dnt="true" data-theme="dark">
+                    <a href="${randomTweet}">View this post on X</a>
+                </blockquote>
+            `;
 
-        <br>
-        <br>
-
-        <a href="https://en.wikipedia.org/wiki/Nitrogen" target="_blank">
-        <button style="font-size: 25px; background-color: Coral; color: white; border-radius: 10px; border-color: DarkOrange">
-            Mystery Button
-        </button>
-        </a>
-
-        <br>
-
-        <a href="https://en.wikipedia.org/wiki/Nitrogen" target="_blank">
-            <button style="font-size: 25px; background-color: Gold; color: white; border-radius: 10px; border-color: Goldenrod">
-                Mystery Button
-            </button>
-        </a>
+            if (!document.querySelector("script[src='https://platform.twitter.com/widgets.js']")) {
+                const script = document.createElement("script");
+                script.async = true;
+                script.src = "https://platform.twitter.com/widgets.js";
+                script.charset = "utf-8";
+                document.body.appendChild(script);
+            }
+        </script>
 
         <br>
 
         <a href="https://en.wikipedia.org/wiki/Nitrogen" target="_blank">
-            <button style="font-size: 25px; background-color: Lime; color: white; border-radius: 10px; border-color: DarkGreen">
-                Mystery Button
-            </button>
-        </a>
-
-        <br>
-
-        <a href="https://en.wikipedia.org/wiki/Nitrogen" target="_blank">
-            <button style="font-size: 25px; background-color: Aquamarine; color: white; border-radius: 10px; border-color: Teal">
-                Mystery Button
-            </button>
-        </a>
-
-        <br>
-
-        <a href="https://en.wikipedia.org/wiki/Nitrogen" target="_blank">
-            <button style="font-size: 25px; background-color: DeepSkyBlue; color: white; border-radius: 10px; border-color: Blue">
-                Mystery Button
-            </button>
-        </a>
-
-        <br>
-
-        <a href="https://en.wikipedia.org/wiki/Nitrogen" target="_blank">
-            <button style="font-size: 25px; background-color: MediumBlue; color: white; border-radius: 10px; border-color: MidnightBlue">
-                Mystery Button
-            </button>
-        </a>
-
-        <br>
-
-        <a href="https://en.wikipedia.org/wiki/Nitrogen" target="_blank">
-            <button style="font-size: 25px; background-color: Purple; color: white; border-radius: 10px; border-color: Indigo">
-                Mystery Button
-            </button>
-        </a>
-
-        <br>
-
-        <a href="https://en.wikipedia.org/wiki/Nitrogen" target="_blank">
-            <button style="font-size: 25px; background-color: MediumPurple; color: white; border-radius: 10px; border-color: MediumOrchid">
-                Mystery Button
-            </button>
-        </a>
-
-        <br>
-
-        <a href="https://en.wikipedia.org/wiki/Nitrogen" target="_blank">
-            <button style="font-size: 25px; background-color: DeepPink; color: white; border-radius: 10px; border-color: MediumVioletRed">
+            <button style="font-size: 25px; background-color: Coral; color: white; border-radius: 10px; border-color: DarkOrange">
                 Mystery Button
             </button>
         </a>
@@ -127,8 +63,6 @@
         <br>
 
         
-
-        </div>
 
         <a href = "https://en.wikipedia.org/wiki/Web_colors"
         target = "_blank">
@@ -140,25 +74,19 @@
         <br>
         <br>
 
-        <audio controls class="contmid">
-            <source src = "womp.wav" type = "audio/wav">
-        </audio>
-
-        <a href = "https://www.youtube.com/watch?v=xCLTpcx9aO8"
-        target = "_blank">
-             <h4 align="center">
-            Fish 24/7 Whenever You Want!
+        <a href = "https://www.youtube.com/watch?v=xCLTpcx9aO8" target = "_blank">
+            <h4 align="center">
+                Fish 24/7 Whenever You Want!
             </h4>
         </a>
 
-        <a href = "mailto:test@shrub.com"
-        target="_blank">
+        <a href = "mailto:test@shrub.com" target="_blank">
             <h4 align="center">
                 contact a fish near you :)
             </h4>
         </a>
 
-        <h4 align="right" class="copyright">
+        <h4 class="copyright">
             Justin0s | ©2026 Rights Reserved
         </h4>
 
